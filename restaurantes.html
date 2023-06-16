@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Guia turístico da cidade de Colombo. Encontre informações sobre hospedagem, restaurantes, eventos e shows, pontos turísticos e como chegar."> <!-- Meta tag para SEO -->
     <title>Turismo em Colombo</title>
     <link rel="stylesheet" type="text/css" href="stylerestaurantes.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <header class="header-container">
@@ -19,11 +26,77 @@
             </ul>
         </nav>
     </header>
-
-    <main>
+    <div class="filtro-div">
+      <input  class="filtro"  type="text" id="filterInput" onkeyup="filterSections()" placeholder="Digite o nome do restaurante...">
+    </div>
+    
+    <section id="restaurante pam">
+      
         
-    </main>
+        <h3> Restaurante da PAM</h3>
+        <img  class="restaurante" src="img/resstaurante-pam.jpg">
+        <p class="text"> Descubra a autenticidade do Restaurante da Pam em Colombo. Com uma culinária caseira e saborosa, oferecemos pratos reconfortantes e deliciosos. Em um ambiente acolhedor e descontraído, desfrute de uma experiência gastronômica única. Nossa equipe dedicada e apaixonada pela culinária prepara cada prato com cuidado e atenção aos detalhes. Venha saborear os sabores genuínos do Restaurante da Pam e desfrute de uma refeição memorável. Satisfação garantida em cada visita ao Restaurante da Pam, onde a comida é preparada com amor.
+        </p>
+        <a class="external-link" href="https://www.edapam.com.br/" target="_blank">Visite o site</a>
+        
+        </section>
 
+
+
+    <section  id="restaurante bom sabor">
+      <h3> Restaurante Bom Sabor</h3>
+        <img class="img" src="img/restaurante-bomsabor.jpg">
+        <P class="text">O Restaurante Bom Sabor, localizado em Colombo, é conhecido por oferecer uma experiência gastronômica deliciosa em um ambiente acolhedor. Com um menu variado e pratos cuidadosamente preparados, o estabelecimento satisfaz os paladares mais exigentes. Os clientes podem desfrutar de uma ampla seleção de pratos saborosos, desde opções tradicionais até pratos contemporâneos, sempre com ingredientes frescos e de alta qualidade. O serviço atencioso e simpático da equipe do Restaurante Bom Sabor garante uma experiência agradável. Seja para um almoço em família, um jantar romântico ou uma celebração especial, o Restaurante Bom Sabor é uma excelente escolha para os amantes da boa comida em Colombo.</P>
+        <a class="external-link" href="https://restaurantguru.com.br/Bom-sabor-restaurante-and-eventos-Colombo-State-of-Parana" target="_blank">Visite o site</a>
+    </section>
+
+    <section id="restaurante dom feijao">
+      <h3> Restaurante Dom Feijão </h3>
+      <img class="img" src="img/restaurante-domfeijao.jpg">
+      <p class="text">Experimente a excelência do Dom Feijão em Colombo. Com uma culinária autêntica e saborosa, nosso restaurante oferece pratos de feijão deliciosos e variados. Em um ambiente aconchegante e acolhedor, você desfrutará de uma experiência gastronômica única. Nossa equipe dedicada se esforça para oferecer o melhor feijão, preparado com ingredientes frescos e sabores irresistíveis. Venha provar o verdadeiro sabor do feijão no Dom Feijão e desfrute de um atendimento impecável. Satisfação garantida em cada visita ao Dom Feijão. </p>
+      <a class="external-link" href="https://www.domfeijao.com.br/" target="_blank">Visite o site</a>
+    </section>
+
+    <section id="restaurante ozzy sushi">
+        <h3> Restaurante Ozzy Sushi</h3>
+        <img class="img" src="img/restaurante-ozzysushi.jpg">
+        <p class="text">Desfrute da excelência do Ozzy Sushi em Colombo. Com ingredientes frescos e habilidade culinária excepcional, nosso restaurante oferece pratos de sushi deliciosos e criativos. Nosso ambiente acolhedor e moderno proporciona uma experiência gastronômica única. Nossos talentosos chefs estão comprometidos em oferecer a combinação perfeita de sabores, texturas e apresentação impecável. Venha saborear o melhor sushi da região e desfrute de um atendimento excepcional. Satisfação garantida em cada visita ao Ozzy Sushi. </p>
+        <a class="external-link" href="https://www.ozzysushibar.com.br/" target="_blank">Visite o site</a>
+    </section>
+
+    <section id="restaurante passargada">
+      
+        <h3> Restaurante Pasargada</h3>
+        <img class="img" src="img/restaurante-passargada.jpg">
+        <p class="text">Descubra a elegância e o sabor do Restaurante Pasargada em Colombo. Com uma culinária refinada e sofisticada, oferecemos pratos deliciosos e requintados. Em um ambiente acolhedor e exclusivo, desfrute de uma experiência gastronômica única. Nossa equipe dedicada e talentosa cria combinações de sabores harmoniosas e apresentações impecáveis. Venha vivenciar a magia do Pasargada e permita-se ser cativado. Satisfação garantida em cada visita ao Restaurante Pasargada.</p>
+        <a class="external-link" href="https://www.tripadvisor.com.br/Restaurant_Review-g2234612-d5330154-Reviews-Pasargada_Restaurante_Rural-Colombo_State_of_Parana.html" target="_blank">Visite o site</a>
+    </section>
+    <script>
+      function filterSections() {
+      // Obtenha o valor do input
+      var filterValue = document.getElementById('filterInput').value;
+  
+      // Obtenha todas as sections
+      var sections = document.getElementsByTagName('section');
+  
+      // Loop por todas as sections
+      for (var i = 0; i < sections.length; i++) {
+          var section = sections[i];
+  
+          // Se o id da section começa com o valor do filtro
+          if (section.id.startsWith(filterValue)) {
+              section.style.display = "block";
+          }
+          // esconde
+          else {
+              section.style.display = "none";
+          }
+      }
+  }
+      </script>
+      </body>
+      
+    
     <footer>
         <div class="footer-container">
           <div class="footer-section">
@@ -44,6 +117,5 @@
             <a href="#">Twitter</a>
           </div>
         </div>
-      </footer>            
-</body>
-</html>
+        <a href="#" class="back-to-top">Voltar ao topo</a>
+      </footer>
