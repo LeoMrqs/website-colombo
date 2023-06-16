@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color: #25a244;
+    background: linear-gradient(72deg, rgb(5, 11, 102), #55D26A);  /* Verde claro */
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #ffffff;  /* Branco */
     width: 100%;
     padding: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra nos cantos */
@@ -22,7 +23,7 @@ html, body {
 header h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    color: #25a244; 
+    color: #25a244;  /* Verde escuro */
     margin: 0;
     flex-grow: 1;
     text-align: center;
@@ -45,20 +46,21 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #25a244; 
+    color: #25a244;  /* Verde escuro */
     text-decoration: none;
 }
 
 main {
     margin: 0;  /* Remove a margem do main */
-    background-color: #25a244;  
-    color: #6ede8a;  
+    background-color: #25a244;  /* Verde escuro */
+    color: #6ede8a;  /* Verde claro */
+    background: linear-gradient(72deg, rgb(5, 11, 102), #55D26A);
 }
 
 main h2 {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    color: #ffffff;  
+    color: #ffffff;  /* Branco */
 }
 
 footer {
@@ -99,3 +101,72 @@ footer {
 .footer-section a:hover {
     text-decoration: underline;
 }
+.content-container {
+    margin: 2rem;
+    background-color:light;
+    display: flex;
+    text-decoration: underline;
+    text-decoration-color: black;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.info-section {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-box {
+    border: 3px solid black;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: lightsteelblue;
+}
+
+.info-box h3 {
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.info-box p {
+    color: #333;
+    line-height: 1.6;
+}
+.content-container h1 {
+    text-align: center;
+    color: #6ede8a;
+    font-family: Arial;
+    font-size: 50px;
+}
+#map {
+    height: 300px;
+    width: 100%;
+    max-height: 300px;
+    max-width: 1500px;
+    margin: auto; 
+}
+.map-container {
+  display: flex;
+  align-items: center;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #25a244;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    display: none; 
+}
+
+
+
+

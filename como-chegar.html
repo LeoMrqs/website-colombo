@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Informações sobre como chegar a Colombo, PR. Inclui opções de transporte público, carro e avião.">
     <title>Turismo em Colombo</title>
     <link rel="stylesheet" type="text/css" href="stylecomochegar.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
     <header class="header-container">
-        <h1>T E C</h1>
+        <h1>T E C</h1>  
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,8 +25,31 @@
     </header>
 
     <main>
-        
-    </main>
+
+        <div class="content-container">
+            <h1 class="como-chegar-text">Como Chegar a Colombo, PR</h1>
+            <section class="info-section">
+                <div class="info-box">
+                    <h3><span class="map-icon">&#x1F68C;</span> DE CARRO: </h3>
+                    <p>Colombo fica a cerca de 18 km do centro de Curitiba, uma viagem que leva aproximadamente 30 minutos de carro. A cidade é bem conectada por uma rede de estradas, e você pode usar a Rodovia Regis Bittencourt (BR-116) para chegar a Colombo. Além de poder ser sua rota, dependendo do seu destino dentro do Paraná.</p>
+                </div>
+                
+                <div class="info-box">
+                    <h3><span class="map-icon">&#x1F68C;</span> DE ONIBÛS:</h3>
+                    <p>Várias linhas de ônibus conectam Colombo a Curitiba e outras cidades vizinhas. A empresa de transporte urbano de Curitiba, URBS, opera várias rotas para Colombo. Por favor, verifique o <a href="https://www.urbs.curitiba.pr.gov.br/" target="_blank">site oficial da URBS</a> para mais informações sobre as rotas e horários dos ônibus.</p>
+                </div>
+                
+                <div class="info-box">
+                    <h3><span class="map-icon">&#x2708;</span> DE AVIÃO: </h3>
+                    <p>O Aeroporto Internacional Afonso Pena, em São José dos Pinhais, é o aeroporto mais próximo de Colombo, localizado a cerca de 20 km de distância. O aeroporto tem voos regulares de e para várias cidades brasileiras e algumas internacionais. De lá, você pode pegar um táxi, um serviço de compartilhamento de carros ou um ônibus para Colombo.</p>
+                </div>
+                <div class="map-container">
+                    <div id="map"></div>
+                </div>
+                </div>  
+            </section>
+        </div>
+    </main> 
 
     <footer>
         <div class="footer-container">
@@ -44,6 +71,29 @@
             <a href="#">Twitter</a>
           </div>
         </div>
-      </footer>            
+        <a href="#" class="back-to-top">Voltar ao topo</a>
+      </footer>  
+      <script>
+        window.onscroll = function(){scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.querySelector(".back-to-top").style.display = "block";
+        } else {
+            document.querySelector(".back-to-top").style.display = "none";
+        }
+        }
+
+        var map = L.map('map').setView([-25.2915, -49.2242], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(map);
+
+        L.marker([-25.2915, -49.2242]).addTo(map)
+            .bindPopup('Colombo, PR.')
+            .openPopup();
+    </script> 
+         
 </body>
 </html>
