@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script>
+        function abrirLink1() {
+            window.open("https://www.google.com/search?client=opera-gx&hs=EYv&tbs=lf:1,lf_ui:1&tbm=lcl&sxsrf=APwXEdcDdj85jzRDCRamJgfSKERKe8K0aw:1686931677315&q=chácara+em+colombo+pr+para+alugar&rflfq=1&num=10&sa=X&ved=2ahUKEwix0Iublsj_AhXyR7gEHSczAFkQjGp6BAhEEAE&biw=1879&bih=962&dpr=1#rlfi=hd:;si:9304543865320847062,l,CiJjaMOhY2FyYSBlbSBjb2xvbWJvIHByIHBhcmEgYWx1Z2FySMTqna3UlYCACFouEAAQBRgAGAIYAyIiY2jDoWNhcmEgZW0gY29sb21ibyBwciBwYXJhIGFsdWdhcpIBDGJhbnF1ZXRfaGFsbJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSSFoyWTJaRWxSRUFFqgFzEAEqJiIiY2jDoWNhcmEgZW0gY29sb21ibyBwciBwYXJhIGFsdWdhcigMMh8QASIbrQbRqCaLJ-q2RS7YaXxVdIy7nlXuRy4hJTFnMiYQAiIiY2jDoWNhcmEgZW0gY29sb21ibyBwciBwYXJhIGFsdWdhcg,y,HbLiYBEbhjw;mv:[[-25.260584700000003,-49.1070977],[-25.394709799999998,-49.375112099999996]]");
+        }
+    </script>
+
+    <script>
+        function abrirLink2() {
+            window.open("https://www.tripadvisor.com.br/Hotel_Review-g2234612-d10063324-Reviews-Hotel_Maua-Colombo_State_of_Parana.html");
+        }
+    </script>
+
+    <script>
+        function abrirLink3() {
+            window.open("https://www.estanciasantacruz.com.br/?sa=X&ved=2ahUKEwigvIXblsj_AhUhN7kGHXB6BnUQyK4DegUIAxDUAw");
+        }
+    </script>
+
+    <script>
+        function abrirLink4() {
+            window.open("https://www.booking.com/hotel/br/peaceandrestvillage-colombo.pt-br.html#map_closed");
+        }
+    </script>
+        
     <title>Turismo em Colombo</title>
     <link rel="stylesheet" type="text/css" href="stylehospedagem.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -21,7 +45,65 @@
     </header>
 
     <main>
-        
+
+        <div class="cards-container">
+            <div class="card1">
+                <h2 class="title-cards">Chácara ValleVerde</h2>
+                <p class="text">Localizada de frente para uma linda reserva, é ótima para realização de eventos e aproveitar a beleza da natureza local.</p>
+                <p class="text">R. Joaquim Félix de Godói, 201 - São Dimas, Colombo - PR</p>
+                <img class="image" src="img/hotel1.jpg" />
+                <div class="button">
+                    <button type="button" class="btn" onclick="abrirLink1()">Ver Hotel</button>
+                </div>
+            </div>
+
+            <div class="card1">
+                <h2 class="title-cards">Hotel Mauá</h2>
+                <p class="text">O estabelecimento possui Restaurante, wifi, ar condicionado e um aconchegante serviço de quarto. Ótimo custo-benefício para passar a noite!</p>
+                <p class="text">Rodovia BR 116 - Km 14,5, 3326 - Mauá, Colombo - PR</p>
+                <img class="image" src="img/hotel2.jpg" />
+                <div class="button">
+                    <button type="button" class="btn" onclick="abrirLink2()">Ver Hotel</button>
+                </div>
+            </div>
+
+            <div class="card1">
+                <h2 class="title-cards">Hotel Estância Santa Cruz</h2>
+                <p class="text">Localizado em uma região próxima a Colombo, este hotel oferece uma excelente estadia que junta lazer, alimentação e beleza em um só lugar.</p>
+                <p class="text">Rua Alberto Otto, 419 - Santa Cândida, Curitiba - PR</p>
+                <img class="image" src="img/hotel3.jpg" />
+                <div class="button">
+                    <button type="button" class="btn" onclick="abrirLink3()">Ver Hotel</button>
+                </div>
+            </div>
+
+            <div class="card1">
+                <h2 class="title-cards">Peaceandrestvillage</h2>
+                <p class="text">Este chalé simples, porém encantador, apresenta uma experiência única em um chalé pet-friendly que proporciona uma conexão única com a natureza.</p>
+                <p class="text">TR um contorno norte, 6033 - Vila Formosa, Colombo - PR</p>
+                <img class="image" src="img/hotel4.jpg" />
+                <div class="button">
+                    <button type="button" class="btn" onclick="abrirLink4()">Ver Hotel</button>
+                </div>
+                <script>
+                    document.getElementById("btn").addEventListener("click", function() {
+                        window.open("www.google.com");
+                    });
+                </script>
+            </div>
+
+        </div>
+        <script>
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.querySelector(".back-to-top").style.display = "block";
+            } else {
+                document.querySelector(".back-to-top").style.display = "none";
+            }
+            }
+        </script>
     </main>
 
     <footer>
@@ -44,6 +126,7 @@
             <a href="#">Twitter</a>
           </div>
         </div>
+        <a href="#" class="back-to-top">Voltar ao topo</a>
       </footer>            
 </body>
 </html>
