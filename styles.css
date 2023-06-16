@@ -5,7 +5,7 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color: #25a244;  /* Verde claro */
+    background-color: #25a244;  
     background: linear-gradient(72deg, #1e7d35, #6ede8a);
 }
 
@@ -13,17 +13,17 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;  /* Branco */
+    background-color: #ffffff;  
     width: 100%;
     padding: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra nos cantos */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
     border-bottom: 2px solid black;
 }
 
 header h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    color: #25a244;  /* Verde escuro */
+    color: #25a244; 
     margin: 0;
     flex-grow: 1;
     text-align: center;
@@ -46,7 +46,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #25a244;  /* Verde escuro */
+    color: #25a244; 
     text-decoration: none;
 }
 
@@ -54,16 +54,16 @@ nav ul li a {
     position: relative;
     background-size: cover;
     width: 100%;
-    height: 100vh;  /* Altura da viewport */
+    height: 100vh; 
     margin: 0px;
     margin-bottom: -75px;
-    overflow: hidden;  /* Esconde o que excede a área da div */
+    overflow: hidden; 
 }
 
 .colombo-image img {
     width: 100%;
-    height: 89vh;  /* Altura da viewport */
-    object-fit: cover;  /* Faz a imagem cobrir todo o espaço */
+    height: 89vh;  
+    object-fit: cover;  
 }
 
 
@@ -76,7 +76,7 @@ nav ul li a {
     font-size: 3em;
     font-family: 'Poppins';
     align-items: center;
-    text-shadow: 2px 2px 3px black; /* Adicionando sombra ao texto */
+    text-shadow: 2px 2px 3px black; 
 }
 
 .colombo-subtext {
@@ -88,7 +88,7 @@ nav ul li a {
     font-size: 1.5em;
     font-family: 'Poppins', sans-serif;
     align-items: center;
-    text-shadow: 2px 2px 3px black; /* Adicionando sombra ao texto */
+    text-shadow: 2px 2px 3px black; 
 }
 
 .colombo-temperature {
@@ -100,20 +100,20 @@ nav ul li a {
     font-size: 1.5em;
     font-family: 'Poppins', sans-serif;
     align-items: center;
-    text-shadow: 2px 2px 3px black; /* Adicionando sombra ao texto */
+    text-shadow: 2px 2px 3px black; 
 }
 
 main {
-    margin: 0;  /* Remove a margem do main */
-    background-color: #25a244;  /* Verde escuro */
-    color: #6ede8a;  /* Verde claro */
+    margin: 0; 
+    background-color: #25a244;  
+    color: #6ede8a; 
     background: linear-gradient(72deg, #1e7d35, #6ede8a);
 }
 
 main h2 {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    color: #ffffff;  /* Branco */
+    color: #ffffff;  
 }
 
 section {
@@ -125,16 +125,16 @@ section {
     margin-bottom: 30px;
     padding: 30px;
     background: linear-gradient(72deg, #6ede8a, #2ec754);
-    background-color: #6ede8a;  /* Verde claro */
-    color: #25a244;  /* Verde escuro */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra nas seções */
-    border-bottom: 4px solid #1f9721; /* Linha divisória */
+    background-color: #6ede8a;  
+    color: #25a244;  
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+    border-bottom: 4px solid #1f9721; 
 }
 
 section h2 {
     font-size: 1.5em;
     font-weight: 600;
-    color: #155724;  /* Verde escuro */
+    color: #155724; 
     margin-bottom: 15px;
 }
 
@@ -143,7 +143,7 @@ section a {
 }
 
 section a:hover {
-    color: rgb(0, 255, 0); /* Substitua #FF0000 pela cor que você deseja quando o mouse passa sobre o link */
+    color: rgb(0, 255, 0);
 }
 
 .subbio-links {
@@ -155,8 +155,8 @@ section a:hover {
 }
 
 footer {
-    background-color: #f8f8f8;  /* Verde escuro */
-    color: #6ede8a;  /* Verde claro */
+    background-color: #f8f8f8; 
+    color: #6ede8a;  
     text-align: center;
     padding: 10px;
     bottom: 0;
@@ -172,7 +172,7 @@ footer {
 }
 
 .footer-section {
-    flex: 1 1 200px;  /* O último valor é a largura mínima. Ajuste conforme necessário. */
+    flex: 1 1 200px;  
     margin: 10px;
     padding: 15px;
 }
@@ -202,5 +202,5 @@ footer {
     color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
-    display: none; /* inicialmente oculto */
+    display: none; 
 }
