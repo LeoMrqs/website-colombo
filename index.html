@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- CÓDIGO CRIADO POR: LEONARDO MARQUES -->
 <html>
 <head>
-    <title>Turismo em Colombo</title>
+    <title>Turismo em Colombo</title> 
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header-container">
+    <header class="header-container"> <!-- Cabeçalho do Site por Leonardo Marques padronizado em todos os HTML -->
         <h1>T E C</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li> <!-- Função para cabeçalho por link de cada pagina -->
                 <li><a href="hospedagem.html">Hospedagem</a></li>
                 <li><a href="restaurantes.html">Restaurantes</a></li>
                 <li><a href="eventos-show.html">Eventos/Show</a></li>
@@ -21,14 +21,14 @@
     </header>
 
     <main>
-        <div class="colombo-image">
-            <img src="img/colombo.jpg" alt="Uma imagem de Colombo" />
+        <div class="colombo-image"> <!-- Imagem de Colombo -->
+            <img src="img/colombo.jpg" alt="Uma imagem de Colombo" /> <!-- URL da imagem de Colombo -->
             <h1 class="colombo-text">BEM-VINDO A COLOMBO!</h1>
-            <p class="colombo-subtext"> Uma cidade encantadora que mistura história, 
+            <p class="colombo-subtext"> Uma cidade encantadora que mistura história, <!-- Textos da Imagem da Homepage-->
                 natureza e cultura em um só lugar. </p>
         </div>
-        <section id="home" >
-            <h2><a href="index.html">Home</a></h2>
+        <section id="home" > <!-- Todas as secctions se encontram aqui -->
+            <h2><a href="index.html">Home</a></h2> <!-- Link das Página -->
             <p class="subbio-links">Bem-vindo à página inicial do nosso site. Aqui você encontrará informações gerais sobre Colombo e o que você pode esperar encontrar em nosso guia turístico.</p>
         </section>
         
@@ -58,19 +58,19 @@
         </section>
         
         <script>
-            window.onscroll = function(){scrollFunction()};
+            window.onscroll = function(){scrollFunction()}; // Função para o botão de voltar ao topo
 
-            function scrollFunction() {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                document.querySelector(".back-to-top").style.display = "block";
+            function scrollFunction() { 
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) { 
+                document.querySelector(".back-to-top").style.display = "block"; // Mostra
             } else {
-                document.querySelector(".back-to-top").style.display = "none";
+                document.querySelector(".back-to-top").style.display = "none"; // Esconde
             }
             }
         </script>
     </main>
 
-    <footer>
+    <footer> <!-- Rodapé do Site por Leonardo Marques padronizado em todos os HTML-->
         <div class="footer-container">
           <div class="footer-section">
             <h3>Contato</h3>
@@ -90,7 +90,7 @@
             <a href="#">Twitter</a>
           </div>
         </div>
-        <a href="#" class="back-to-top">Voltar ao topo</a>
+        <a href="#" class="back-to-top">Voltar ao topo</a> <!-- Botão de voltar ao topo -->
       </footer>            
 </body>
 </html>

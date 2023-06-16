@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- CRIADO POR: LUIZ FARIAS -->
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,11 +26,11 @@
 
     <main>
 
-        <div class="content-container">
+        <div class="content-container"> <!-- Os container das sections -->
             <h1 class="como-chegar-text">Como Chegar a Colombo, PR</h1>
             <section class="info-section">
                 <div class="info-box">
-                    <h3><span class="map-icon">&#x1F68C;</span> DE CARRO: </h3>
+                    <h3><span class="map-icon">&#x1F68C;</span> DE CARRO: </h3> <!-- Icones do site: https://www.w3schools.com/charsets/ref_emoji.asp -->
                     <p>Colombo fica a cerca de 18 km do centro de Curitiba, uma viagem que leva aproximadamente 30 minutos de carro. A cidade é bem conectada por uma rede de estradas, e você pode usar a Rodovia Regis Bittencourt (BR-116) para chegar a Colombo. Além de poder ser sua rota, dependendo do seu destino dentro do Paraná.</p>
                 </div>
                 
@@ -74,25 +74,25 @@
         <a href="#" class="back-to-top">Voltar ao topo</a>
       </footer>  
       <script>
-        window.onscroll = function(){scrollFunction()};
+        window.onscroll = function(){scrollFunction()}; // Função para o botão de voltar ao topo
 
-        function scrollFunction() {
+        function scrollFunction() { 
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            document.querySelector(".back-to-top").style.display = "block";
+            document.querySelector(".back-to-top").style.display = "block"; // Mostra o botão
         } else {
-            document.querySelector(".back-to-top").style.display = "none";
+            document.querySelector(".back-to-top").style.display = "none";  // Esconde o botão
         }
         }
 
-        var map = L.map('map').setView([-25.2915, -49.2242], 13);
+        var map = L.map('map').setView([-25.2915, -49.2242], 13); // Coordenadas do mapa
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { // Mapa do OpenStreetMap
             maxZoom: 19,
-        }).addTo(map);
+        }).addTo(map); // Adiciona o mapa ao site
 
-        L.marker([-25.2915, -49.2242]).addTo(map)
-            .bindPopup('Colombo, PR.')
-            .openPopup();
+        L.marker([-25.2915, -49.2242]).addTo(map) // Adiciona o marcador no mapa
+            .bindPopup('Colombo, PR.') // Adiciona o texto ao marcador
+            .openPopup(); // Abre o popup do marcador
     </script> 
          
 </body>

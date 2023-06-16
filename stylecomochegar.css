@@ -1,29 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+/*-------------------------------------------------------------------------------------------------------*/
+/* CSS Base do site criado por Leonardo */
+
 
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(72deg, rgb(5, 11, 102), #55D26A);  /* Verde claro */
+    background: linear-gradient(72deg, rgb(5, 11, 102), #55D26A);  
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;  /* Branco */
+    background-color: #ffffff;  
     width: 100%;
     padding: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra nos cantos */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
     border-bottom: 2px solid black;
 }
 
 header h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    color: #25a244;  /* Verde escuro */
+    color: #25a244;  
     margin: 0;
     flex-grow: 1;
     text-align: center;
@@ -46,26 +49,26 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #25a244;  /* Verde escuro */
+    color: #25a244;  
     text-decoration: none;
 }
 
 main {
-    margin: 0;  /* Remove a margem do main */
-    background-color: #25a244;  /* Verde escuro */
-    color: #6ede8a;  /* Verde claro */
+    margin: 0;  
+    background-color: #25a244;  
+    color: #6ede8a;  
     background: linear-gradient(72deg, rgb(5, 11, 102), #55D26A);
 }
 
 main h2 {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    color: #ffffff;  /* Branco */
+    color: #ffffff;  
 }
 
 footer {
-    background-color: #f8f8f8;  /* Verde escuro */
-    color: #6ede8a;  /* Verde claro */
+    background-color: #f8f8f8;  
+    color: #6ede8a;  
     text-align: center;
     padding: 10px;
     bottom: 0;
@@ -81,7 +84,7 @@ footer {
 }
 
 .footer-section {
-    flex: 1 1 200px;  /* O último valor é a largura mínima. Ajuste conforme necessário. */
+    flex: 1 1 200px; 
     margin: 10px;
     padding: 15px;
 }
@@ -101,6 +104,11 @@ footer {
 .footer-section a:hover {
     text-decoration: underline;
 }
+
+/*-------------------------------------------------------------------------------------------------------*/
+/* A PARTIR DAQUI DO LUIZ FARIAS */
+
+
 .content-container {
     margin: 2rem;
     background-color:light;
@@ -122,15 +130,16 @@ footer {
 }
 
 .info-box {
-    border: 3px solid black;
+    border: 15px solid linear-gradient(72deg, rgb(5, 11, 102), #55D26A);
     padding: 2rem;
-    border-radius: 10px;
-    background-color: lightsteelblue;
+    border-radius: 50px;
+    background-color: white;
 }
 
 .info-box h3 {
     margin-bottom: 1rem;
     color: black;
+    text-align: center;
 }
 
 .info-box p {
@@ -167,6 +176,8 @@ footer {
     display: none; 
 }
 
-
-
+.como-chegar-text {
+    border-radius: 15px;
+    border: black;
+}
 
